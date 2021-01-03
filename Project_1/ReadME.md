@@ -52,7 +52,7 @@ my html code
 </table>
 
 <img src="C:\Users\theam\Downloads\Radha krishna Cute art Mobile Wallpaper.jpg" alt="related to web development"  width="200px" height="200px">
-<video width="200px" height="200px" src="C:\Users\theam\Desktop\funny pics\new yr video.mp4" type="video/mp4" autoplay loop>
+<video width="200px" height="200px" src="C:\Users\theam\Desktop\funny pics\new yr video.mp4" type="video/mp4" autoplay loop alt="New year wishes video">
 </video> </br>
 
 
