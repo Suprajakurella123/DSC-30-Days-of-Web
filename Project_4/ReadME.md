@@ -53,12 +53,12 @@ box-sizing: border-box;
     background: #f9f9f9;
   }
   
-  /* Darker background-color on hover */
+  
   ul li:hover {
     background: #ddd;
   }
   
-  /* When clicked on, add a background color and strike out text */
+  
   ul li.checked {
     background: #888;
     color: #fff;
