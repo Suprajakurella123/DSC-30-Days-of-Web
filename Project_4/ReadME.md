@@ -38,7 +38,7 @@ box-sizing: border-box;
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #eee;
+    background: grey;
     font-size: 18px;
     transition: 0.2s;
   
@@ -50,18 +50,18 @@ box-sizing: border-box;
   }
   
   ul li:nth-child(odd) {
-    background: #f9f9f9;
+    background:black;
   }
   
   
   ul li:hover {
-    background: #ddd;
+    background: white;
   }
   
   
   ul li.checked {
-    background: #888;
-    color: #fff;
+    background:grey;
+    color: grey;
     text-decoration: line-through;
   }
   
