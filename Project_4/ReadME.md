@@ -17,31 +17,32 @@
 PROJECT 1
 
 
-<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="css\to do list.css">
+    <title>Todo App</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">    
   </head>
   <body>
-
-    <div class="header">
-      <h2 style="margin:5px">To Do List</h2>
-      <input type="text" id="myInput" placeholder="Title...">
-      <span onclick="newElement()" class="addBtn">Add</span>
+    <div class="container">
+      <p>
+        <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
+      </p>
+      
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>Pay Bills</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        <li class="editMode"><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        
+      </ul>
+      
+      <h3>Completed</h3>
+      <ul id="completed-tasks">
+        <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
     </div>
 
-    <ul id="myUL">
-      <li class="checked">Go through DataFlair's JavaScript tutorials</li>
-      <li>Practise the codes</li>
-      <li>Read a book on JavaScript</li>
-      <li class="checked">Organise my notes</li>
-      <li>Create JavaScript projects</li>
-      <li>Take quiz</li>
-      <li>Comprehend interview questions</li>
-    </ul>
-    <button type="button" id="clear-list" onclick="removeAll()">Clear Items</button>
-
-    <script type="text/javascript" src="js\to do list.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 
   </body>
 </html>
