@@ -50,12 +50,62 @@ PROJECT 1
 css file
 
 
-g);
+body {
+  margin: 10px auto;
+  min-width: 250px;
+  max-width: 50%;
+  background-color: silver;
+}
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+ul li:nth-child(odd) {
+background: #f9f9f9;
+}
+ul li:hover {
+  background: #ddd;
+}
+ul li.checked {
+  background: teal;
+  color: white;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
   height: 15px;
   width: 7px;
 }
 
-/* Style the close button */
+
 .close {
   position: absolute;
   right: 0;
@@ -132,7 +182,7 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -142,7 +192,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
+
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -150,7 +200,7 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
+
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
@@ -177,7 +227,7 @@ function newElement() {
   }
 }
 
-//Clearing the list
+
 function removeAll(){
   var lst = document.getElementsByTagName("ul");
     lst[0].innerHTML = "";
