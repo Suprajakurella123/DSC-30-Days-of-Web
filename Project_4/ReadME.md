@@ -10,69 +10,48 @@
   * Do not allow repeated or empty fields.
   * Whenever they enter a new thing, it will have a small fade in effect.
   * Animations and functionalities.
+<nav class="navbar navbar-expand-lg navbar-light bg-light"> <div class="container-fluid"> <a class="navbar-brand" href="#">TOOLS</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarSupportedContent"> <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li> <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a> <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> <li><a class="dropdown-item" href="#">Action</a></li> <li><a class="dropdown-item" href="#">Another action</a></li> <li><hr class="dropdown-divider"></li> <li><a class="dropdown-item" href="#">Something else here</a></li> </ul> </li> <li class="nav-item"> <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> </li> </ul> <form class="d-flex"> <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> <button class="btn btn-outline-success" type="submit">Search</button> </form> </div> </div>
+</nav>
 
 
 
 
-PROJECT 1
+<head> 
+   <title> PAGE TITLE</title>
+   <meta charset ="UTF-8">
+   <meta name ="viewport" content =" width =device-width, initial-scale=1">
+   <style>
+       body 
+       {
+           font-family: Arial;
+           
+           margin:0;
+       }
+       input{
+           
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+} 
+       
+       
+       .header
+       {
+           padding: 60px;
+           text-align:center;
+           background:deepskyblue;
+           color : white;
+           font-size: 20px;
 
+       }
+       .content
+       {
+           padding : 20px;
 
-<html>
-  <head>
-    <title>Todo App</title>
-    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">    
-  </head>
-  <body>
-    <div class="container">
-      <p>
-        <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
-      </p>
-      
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
-        <li><input type="checkbox"><label>Pay Bills</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-        <li class="editMode"><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-        
-      </ul>
-      
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-      </ul>
-    </div>
+       }
 
-    <script type="text/javascript" src="app.js"></script>
-
-  </body>
-</html>
-
-
-body {
-  background: #fff;
-  color: #333;
-  font-family: Lato, sans-serif;
-}
-.container {
-  display: block;
-  width: 400px;
-  margin: 100px auto 0;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-li * {
-  float: left;
-}
-li, h3 {
-  clear:both;
-  list-style:none;
-}
-input, button {
-  outline: none;
-}
-button {
+       button {
   background: none;
   border: 0px;
   color: #888;
@@ -82,11 +61,6 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
-  color: #333;
-}
-
-h3,
 label[for='new-task'] {
   color: #333;
   font-weight: 700;
@@ -96,76 +70,136 @@ label[for='new-task'] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
-  margin: 0;
-  font-size: 18px;
-  line-height: 18px;
-  height: 18px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  background: #fff;
-  border-radius: 6px;
-  font-family: Lato, sans-serif;
-  color: #888;
-}
-input[type="text"]:focus {
-  color: #333;
-}
-
-
-label[for='new-task'] {
+.container {
   display: block;
-  margin: 0 0 20px;
+  width: 400px;
+  margin: 100px auto 0;
 }
-input#new-task {
-  float: left;
-  width: 318px;
+   </style>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+    <div class="header">
+
+        <h1> SPACE PROJECTS</h1>
+        <p> A place to explore</p>
+
+<body>
+
+<head>
+    <title>Todo App</title>
+      
+</head>
+
+  <div class="container">
+    <p>
+      <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
+    </p>
+    
+    <h3>Todo</h3>
+    <ul id="incomplete-tasks">
+      <li><input type="checkbox"><label>Pay Bills</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      <li class="editMode"><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      
+    </ul>
+    
+    <h3>Completed</h3>
+    <ul id="completed-tasks">
+      <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+    </ul>
+  </div>
+
+  <script type="text/javascript" src="app.js"></script>
+
+
+   
+<div id="container">
+    <div id="nameDiv" class="input"> NAME:<input id="name" type="text" placeholder="K.Supraja"/></div>
+
+    <div class="input"> AGE <input id="age" type ="text" placeholder="18"/></div>
+
+    <div class="input" >EMAIL ID <input id="emailid" type="text" placeholder="suprajakurella73@gmail.com"/></div>
+
+    <button id="entry"> INPUT ENTRY</button>
+
+</div>
+<table id="display">
+
+
+
+    <tr>
+   
+       <th> NAME</th>
+       
+       <th> age</th> 
+       <th>EMAIL ID</th>
+       
+       
+   
+   </table>
+  
+<script src="index.js" type="text/javascript">
+
+</script>
+
+
+
+  
+
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"> <div class="carousel-inner"> <div class="carousel-item active"> <img src="/Internal storage/DCIM/Screenshots" class="d-block w-100" alt="space."> </div> <div class="carousel-item"> <img src="/Internal storage/DCIM/Screenshots" class="d-block w-100" alt="...space"> </div> <div class="carousel-item"> <img src="/Internal storage/DCIM/Screenshots" class="d-block w-100" alt="space"> </div> </div> <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </a> </div>
+
+<img src="C:\Users\theam\Pictures\Screenshots\Screenshot (187).png" alt="related to space "  width="400px" height="400px">
+
+
+<div class ="header">
+<h3>> About me</h3>
+<p> K. Supraja<br>
+2nd year Student at NIT RAIPUR</br>
+contact no : 7806081930</br>
+suprajakurella73@gmail.com</p>
+</div>
+</body>
+</html>
+
+   
+
+index.js file
+
+if (typeof document !== 'undefined')
+{
+    
+
+var row=1;
+var entry = document.getElementById("entry");
+entry.addEventListener("click", displayDetails);
+
+window.addEventListener('load',displayDetails,false)
+
+function displayDetails()
+{
+    var name=document.getElementById("name").value;
+    var age=document.getElementById("age").value;
+    var emailid=document.getElementById("emailid").value;
+    
+   if(!name || !age || !emailid)
+    {
+        alert("please fill all the boxes"); 
+
+    }
+    var display = document.getElementById("display");
+    var newRow= display.insertRow(row);
+    var cell1= newRow.insertCell(0);
+    var cell2= newRow.insertCell(1);
+    var cell3=newRow.insertCell(2);
+
+    cell1.innerHTML=name;
+    cell2.innerHTML= age;
+    cell2.innerHTML= age;
+    row++;
+
 }
-p > button:hover {
-  color: #0FC57C;
-}
-
-
-li {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-}
-li > input[type="checkbox"] {
-  margin: 0 10px;
-  position: relative;
-  top: 15px;
-}
-li > label {
-  font-size: 18px;
-  line-height: 40px;
-  width: 237px;
-  padding: 0 0 0 11px;
-}
-li >  input[type="text"] {
-  width: 226px;
-}
-li > .delete:hover {
-  color: #CF2323;
-}
-
-
-#completed-tasks label {
-  text-decoration: line-through;
-  color: #888;
-}
-
-
-ul li input[type=text] {
-  display:none;
-}
-
-ul li.editMode input[type=text] {
-  display:block;
-}
-
-ul li.editMode label {
-  display:none;
 }
 
 
@@ -177,6 +211,9 @@ ul li.editMode label {
 
 
 
+
+
+app.js file
 
 var taskInput=document.getElementById("new-task");
 var addButton=document.getElementsByTagName("button")[0];
